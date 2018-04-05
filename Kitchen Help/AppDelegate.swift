@@ -14,6 +14,9 @@ import GoogleSignIn
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
 
+
+
+    
     var window: UIWindow?
 
 
@@ -22,7 +25,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
         
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
-        // Override point for customization after application launch.
         return true
     }
     @available(iOS 9.0, *)
@@ -42,7 +44,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
             print("Failed to log into Google: ", err)
             return
         }
+        //code to move successful login to the next view controller
+        
         print("Successfully logged into Google", user)
+        
+        //Go to the HomeViewController if the login is sucessful
+    
+        
         guard let idToken = user.authentication.idToken else { return }
         guard let authentication = user.authentication else { return }
         let credentials = GoogleAuthProvider.credential(withIDToken: authentication.idToken,accessToken:authentication.accessToken)

@@ -62,10 +62,7 @@ class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
         
     }
     fileprivate func setupGoogleButtons(){
-        let googleButton = GIDSignInButton()
-        googleButton.frame = CGRect(x: 60, y: 500, width: view.frame.width - 116, height: 50)
-        view.addSubview(googleButton)
-        
+      
         GIDSignIn.sharedInstance().uiDelegate = self
     }
     

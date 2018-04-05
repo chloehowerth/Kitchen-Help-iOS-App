@@ -147,6 +147,14 @@
                                     <action selector="SignOutButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l6Z-3r-2H2"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCc-zX-53L" customClass="GIDSignInButton">
+                                <rect key="frame" x="16" y="425" width="343" height="138"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES"/>
+                                </accessibility>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -154,6 +162,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="Yaj-hx-S8C" id="9vC-Zo-ccD"/>
                         <outlet property="passwordTextField" destination="Hn3-5f-7Oo" id="kqJ-qj-TNp"/>
+                        <segue destination="lu2-WD-Y4q" kind="presentation" id="dV6-Q6-KRg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -186,6 +195,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="Search"/>
                         <viewLayoutGuide key="safeArea" id="c8F-Uv-9T4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Search" id="r7O-NE-Mep"/>

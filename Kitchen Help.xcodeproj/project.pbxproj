@@ -21,12 +21,11 @@
 		A56EFFB72028B0B000B106F5 /* Kitchen_HelpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56EFFB62028B0B000B106F5 /* Kitchen_HelpUITests.swift */; };
 		A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */; };
 		A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5B169CE20446CA800A524A5 /* Pantry.plist */; };
-		A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5C9FC54203F3392008262CE /* GoogleService-Info.plist */; };
 		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
 		A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E716702048582700D9FEF6 /* XMLParser.swift */; };
 		A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E71672204859F300D9FEF6 /* Recipes.xml */; };
 		C20F25C84670957EFC61D8A1 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CC50D34C418B23DD30A6D0 /* Pods_Kitchen_Help.framework */; };
-		C31FD33B2060106A0086733C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C31FD33A206010690086733C /* GoogleService-Info.plist */; };
+		C37496E32076718D0062EDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C37496E22076718D0062EDB8 /* GoogleService-Info.plist */; };
 		FA0C6B579E0E5F864C251AF8 /* Pods_Kitchen_HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96883284F2341649CE18581A /* Pods_Kitchen_HelpUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,12 +71,11 @@
 		A56EFFB82028B0B000B106F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		A5B169CE20446CA800A524A5 /* Pantry.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Pantry.plist; sourceTree = "<group>"; };
-		A5C9FC54203F3392008262CE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
 		A5E716702048582700D9FEF6 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		A5E71672204859F300D9FEF6 /* Recipes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
 		AFFB44069DA38B6BFCF83267 /* Pods-Kitchen Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.debug.xcconfig"; sourceTree = "<group>"; };
-		C31FD33A206010690086733C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C37496E22076718D0062EDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CB2C8B75A716A2AF8C18783D /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D25F54C6EE38DA9EA412D45C /* Pods-Kitchen HelpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6D6D8FAACE508D7C4CDBF67 /* Pods-Kitchen Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,7 +138,7 @@
 		A56EFF8A2028B0B000B106F5 = {
 			isa = PBXGroup;
 			children = (
-				C31FD33A206010690086733C /* GoogleService-Info.plist */,
+				C37496E22076718D0062EDB8 /* GoogleService-Info.plist */,
 				A56EFF952028B0B000B106F5 /* Kitchen Help */,
 				A56EFFAA2028B0B000B106F5 /* Kitchen HelpTests */,
 				A56EFFB52028B0B000B106F5 /* Kitchen HelpUITests */,
@@ -198,7 +196,6 @@
 			children = (
 				A5CC4CC82041E4D90019BBF3 /* Recipes.plist */,
 				A5B169CE20446CA800A524A5 /* Pantry.plist */,
-				A5C9FC54203F3392008262CE /* GoogleService-Info.plist */,
 				A5E71672204859F300D9FEF6 /* Recipes.xml */,
 			);
 			path = "Property Lists";
@@ -339,13 +336,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */,
-				C31FD33B2060106A0086733C /* GoogleService-Info.plist in Resources */,
 				A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */,
 				A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */,
 				A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */,
-				A5C9FC55203F3392008262CE /* GoogleService-Info.plist in Resources */,
 				A56EFF9E2028B0B000B106F5 /* Assets.xcassets in Resources */,
 				A56EFF9C2028B0B000B106F5 /* Main.storyboard in Resources */,
+				C37496E32076718D0062EDB8 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
