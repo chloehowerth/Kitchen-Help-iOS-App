@@ -38,34 +38,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
                                                  sourceApplication: sourceApplication,
                                                  annotation: annotation)
     }
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
         // ...
-        if let err = error {
-            print("Failed to log into Google: ", err)
-            return
+        if let error = error {
+            
+            
         }
-        //code to move successful login to the next view controller
         
-        print("Successfully logged into Google", user)
         
-        //Go to the HomeViewController if the login is sucessful
-    
-        
-        guard let idToken = user.authentication.idToken else { return }
         guard let authentication = user.authentication else { return }
-        let credentials = GoogleAuthProvider.credential(withIDToken: authentication.idToken,accessToken:authentication.accessToken)
-        Auth.auth().signIn(with: credentials, completion: {(user, error) in if let err = error {
-            print("Failed to create a Firebase user with Google account:", err)
-            return
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        // ...
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if let error = error {
+                // ...
+                return
             }
-            print("Successfully logged into Firebase with Google", user?.uid)
-        })
+            if let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController {
+                if let window = self.window, let rootViewController = window.rootViewController {
+                    var currentController = rootViewController
+                    while let presentedController = currentController.presentedViewController {
+                        currentController = presentedController
+                    }
+                    currentController.present(controller, animated: true, completion: nil)
+                }
+            }
+            // User is signed in
+            // ...
+        }
+    
     }
     
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...
     }
+    
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

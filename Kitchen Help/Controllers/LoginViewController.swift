@@ -21,6 +21,7 @@ class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    
     @IBAction func loginAction(_ sender: Any) {
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
             
@@ -58,13 +59,51 @@ class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
                 }
             }
         }
-        
-        
     }
     fileprivate func setupGoogleButtons(){
       
         GIDSignIn.sharedInstance().uiDelegate = self
+        
     }
+    
+    @IBAction func submitAction(_ sender: Any) {
+        
+        if self.emailTextField.text == "" {
+            let alertController = UIAlertController(title: "Oops!", message: "Please enter an email.", preferredStyle: .alert)
+            
+            let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            alertController.addAction(defaultAction)
+            
+            present(alertController, animated: true, completion: nil)
+            
+        } else {
+            Auth.auth().sendPasswordReset(withEmail: self.emailTextField.text!, completion: { (error) in
+                
+                var title = ""
+                var message = ""
+                
+                if error != nil {
+                    title = "Error!"
+                    message = (error?.localizedDescription)!
+                } else {
+                    title = "Success!"
+                    message = "Password reset email sent."
+                    self.emailTextField.text = ""
+                }
+                
+                let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+                
+                let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                alertController.addAction(defaultAction)
+                
+                self.present(alertController, animated: true, completion: nil)
+            })
+        }
+    }
+   
+    
+    
+    
     
     @IBAction func SignOutButton(_ sender: UIButton) {
         GIDSignIn.sharedInstance().signOut()
