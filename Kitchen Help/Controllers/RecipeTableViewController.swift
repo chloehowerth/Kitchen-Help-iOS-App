@@ -51,12 +51,12 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         let titleLabel = cell.viewWithTag(11) as! UILabel
-        let cookTimeLabel = cell.viewWithTag(12) as! UILabel
-        let caloriesLabel = cell.viewWithTag(13) as! UILabel
+        //let cookTimeLabel = cell.viewWithTag(12) as! UILabel
+        //let caloriesLabel = cell.viewWithTag(13) as! UILabel
         
         titleLabel.text = tableViewDataSource[indexPath.row].title
-        cookTimeLabel.text = tableViewDataSource[indexPath.row].duration
-        caloriesLabel.text = tableViewDataSource[indexPath.row].calories
+        //cookTimeLabel.text = tableViewDataSource[indexPath.row].duration
+        //caloriesLabel.text = tableViewDataSource[indexPath.row].calories
         
         return cell
     }
