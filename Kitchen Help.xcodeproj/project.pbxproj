@@ -14,6 +14,7 @@
 		1DB6E137207678B900A301B9 /* LOGOblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12E207678B800A301B9 /* LOGOblue.png */; };
 		1DB6E138207678B900A301B9 /* ADDbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12F207678B900A301B9 /* ADDbutton.png */; };
 		1FF5C241901D3D1E61899249 /* Pods_Kitchen_HelpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC76275D0773F37795C11EF /* Pods_Kitchen_HelpTests.framework */; };
+		5E621733207D545300BCBD00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E621732207D545200BCBD00 /* HomeViewController.swift */; };
 		5EC0BB9B206DE36A005056FE /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0BB9A206DE36A005056FE /* EmailLoginViewController.swift */; };
 		A5209AB1202CAB4C0075DD0D /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5209AB0202CAB4C0075DD0D /* RecipeTableViewController.swift */; };
 		A5209AB4202CAD660075DD0D /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5209AB3202CAD660075DD0D /* SearchPageViewController.swift */; };
@@ -32,7 +33,6 @@
 		A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E71672204859F300D9FEF6 /* Recipes.xml */; };
 		C20F25C84670957EFC61D8A1 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CC50D34C418B23DD30A6D0 /* Pods_Kitchen_Help.framework */; };
 		C37496E32076718D0062EDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C37496E22076718D0062EDB8 /* GoogleService-Info.plist */; };
-		C38FF433207BB3B100E16C92 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38FF432207BB3B100E16C92 /* HomeViewController.swift */; };
 		FA0C6B579E0E5F864C251AF8 /* Pods_Kitchen_HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96883284F2341649CE18581A /* Pods_Kitchen_HelpUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +64,7 @@
 		1DB6E12D207678B800A301B9 /* INGREDIENTSbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INGREDIENTSbutton.png; sourceTree = "<group>"; };
 		1DB6E12E207678B800A301B9 /* LOGOblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGOblue.png; sourceTree = "<group>"; };
 		1DB6E12F207678B900A301B9 /* ADDbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADDbutton.png; sourceTree = "<group>"; };
+		5E621732207D545200BCBD00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Desktop/HomeViewController.swift; sourceTree = "<group>"; };
 		5EC0BB9A206DE36A005056FE /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
 		5FCD4F5042233549C42C006E /* Pods-Kitchen HelpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7286C441CAAB0753C9647499 /* Pods-Kitchen HelpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +93,6 @@
 		A5E71672204859F300D9FEF6 /* Recipes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
 		AFFB44069DA38B6BFCF83267 /* Pods-Kitchen Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.debug.xcconfig"; sourceTree = "<group>"; };
 		C37496E22076718D0062EDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C38FF432207BB3B100E16C92 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = "/Users/s0936878/Documents/Kitchen-Help/Kitchen Help/Controllers/HomeViewController.swift"; sourceTree = "<absolute>"; };
 		CB2C8B75A716A2AF8C18783D /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D25F54C6EE38DA9EA412D45C /* Pods-Kitchen HelpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.release.xcconfig"; sourceTree = "<group>"; };
 		F6D6D8FAACE508D7C4CDBF67 /* Pods-Kitchen Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.release.xcconfig"; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		A5209AB2202CAB6B0075DD0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C38FF432207BB3B100E16C92 /* HomeViewController.swift */,
+				5E621732207D545200BCBD00 /* HomeViewController.swift */,
 				A56EFF982028B0B000B106F5 /* LoginViewController.swift */,
 				A5B169CA20446B1300A524A5 /* HomeTableViewController.swift */,
 				A5209AB3202CAD660075DD0D /* SearchPageViewController.swift */,
@@ -573,7 +573,7 @@
 				A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */,
 				A5209AB1202CAB4C0075DD0D /* RecipeTableViewController.swift in Sources */,
 				A56EFF992028B0B000B106F5 /* LoginViewController.swift in Sources */,
-				C38FF433207BB3B100E16C92 /* HomeViewController.swift in Sources */,
+				5E621733207D545300BCBD00 /* HomeViewController.swift in Sources */,
 				A56EFF972028B0B000B106F5 /* AppDelegate.swift in Sources */,
 				A5209AB6202CADDE0075DD0D /* ResultsViewController.swift in Sources */,
 				A5209AB4202CAD660075DD0D /* SearchPageViewController.swift in Sources */,

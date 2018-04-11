@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/s0936878/Documents/Kitchen-Help/Kitchen Help/Controllers/HomeViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:Kitchen Help.xcodeproj">
    </FileRef>
    <FileRef

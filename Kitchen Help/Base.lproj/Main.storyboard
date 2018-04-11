@@ -240,7 +240,7 @@
                                     <color key="titleColor" red="0.31386065480000003" green="0.60787504910000001" blue="0.96488672490000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="tm7-D4-DOf" kind="push" id="nJw-VD-FYp"/>
+                                    <segue destination="tm7-D4-DOf" kind="presentation" id="EV9-ep-3kY"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kitchen Help" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-Tr-mMe">
@@ -274,21 +274,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Log Out"/>
                                 <connections>
+                                    <action selector="LogOutAll:" destination="tm7-D4-DOf" eventType="touchUpInside" id="wDo-ZK-Jrh"/>
                                     <segue destination="BYZ-38-t0r" kind="push" id="1Ar-R2-uJA"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLL-cI-Skw">
-                                <rect key="frame" x="164" y="228" width="45" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Home"/>
-                                <connections>
-                                    <segue destination="lu2-WD-Y4q" kind="push" id="KHa-HP-ylP"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LOGINgreen.png" translatesAutoresizingMaskIntoConstraints="NO" id="hZv-Dk-3xv">
                                 <rect key="frame" x="148" y="137" width="70" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLL-cI-Skw">
+                                <rect key="frame" x="161" y="227" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Home"/>
+                                <connections>
+                                    <segue destination="lu2-WD-Y4q" kind="presentation" id="TdP-i4-15M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Xvm-vW-WL0"/>
@@ -426,12 +427,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ADDbutton.png" width="992" height="246"/>
         <image name="LOGINgreen.png" width="700" height="700"/>
         <image name="LOGOblue.png" width="700" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="nJw-VD-FYp"/>
-        <segue reference="KHa-HP-ylP"/>
+        <segue reference="TdP-i4-15M"/>
     </inferredMetricsTieBreakers>
 </document>
