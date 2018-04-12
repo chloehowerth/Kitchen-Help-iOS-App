@@ -55,7 +55,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
                 // ...
                 return
             }
-            if let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController {
+            if let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Home") as? HomeViewController
+            
+            {
                 if let window = self.window, let rootViewController = window.rootViewController {
                     var currentController = rootViewController
                     while let presentedController = currentController.presentedViewController {

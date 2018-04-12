@@ -23,6 +23,7 @@ class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
     @IBOutlet weak var passwordTextField: UITextField!
     
     @IBAction func loginAction(_ sender: Any) {
+        
         if self.emailTextField.text == "" || self.passwordTextField.text == "" {
             
             //Alert to tell the user that there was an error because they didn't fill anything in the textfields because they didn't fill anything in
@@ -56,6 +57,8 @@ class LoginViewController: UITableViewController,  GIDSignInUIDelegate {
                     alertController.addAction(defaultAction)
                     
                     self.present(alertController, animated: true, completion: nil)
+                    
+                     print("You have not successfully logged in")
                 }
             }
         }
