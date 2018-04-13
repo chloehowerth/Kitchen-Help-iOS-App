@@ -62,7 +62,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let Storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let Storyboard = UIStoryboard(name: "Login", bundle: nil)
         let resultsVC = Storyboard.instantiateViewController(withIdentifier: "ResultsViewController") as! ResultsViewController
         
         // Information to be passed to ResultsViewController
