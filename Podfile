@@ -3,6 +3,7 @@ platform :ios, '9.0'
 pod 'Firebase/Core'
 pod ‘Firebase/Auth’
 pod ‘GoogleSignIn’
+pod 'FirebaseDatabase'
 
 target 'Kitchen Help' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks

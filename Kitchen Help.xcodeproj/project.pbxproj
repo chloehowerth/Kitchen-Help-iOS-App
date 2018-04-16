@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D9CA454018E7340F803C64A /* Pods_Kitchen_HelpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AFAB75F7FE4E3B059AF48DB /* Pods_Kitchen_HelpTests.framework */; };
 		1DB6E132207678B900A301B9 /* COMPLETEbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E129207678B800A301B9 /* COMPLETEbutton.png */; };
 		1DB6E134207678B900A301B9 /* LOGINbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12B207678B800A301B9 /* LOGINbutton.png */; };
 		1DB6E135207678B900A301B9 /* MENUbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12C207678B800A301B9 /* MENUbutton.png */; };
 		1DB6E136207678B900A301B9 /* INGREDIENTSbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12D207678B800A301B9 /* INGREDIENTSbutton.png */; };
 		1DB6E137207678B900A301B9 /* LOGOblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12E207678B800A301B9 /* LOGOblue.png */; };
 		1DB6E138207678B900A301B9 /* ADDbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12F207678B900A301B9 /* ADDbutton.png */; };
-		1FF5C241901D3D1E61899249 /* Pods_Kitchen_HelpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EC76275D0773F37795C11EF /* Pods_Kitchen_HelpTests.framework */; };
+		5E2174052083A4BB0010DD9A /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2174042083A4BB0010DD9A /* GroceryListTableViewController.swift */; };
+		5E2174072083A4D30010DD9A /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2174062083A4D30010DD9A /* OnlineUsersTableViewController.swift */; };
 		5E5534D2207FAB64008A985E /* FixedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5534D1207FAB63008A985E /* FixedLoginViewController.swift */; };
 		5E621733207D545300BCBD00 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E621732207D545200BCBD00 /* HomeViewController.swift */; };
 		5EC0BB9B206DE36A005056FE /* EmailLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC0BB9A206DE36A005056FE /* EmailLoginViewController.swift */; };
+		5ECDE0802083B50D0094D4C3 /* GroceryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE07F2083B50D0094D4C3 /* GroceryItem.swift */; };
+		5ECDE0822083FF530094D4C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECDE0812083FF520094D4C3 /* User.swift */; };
 		A5209AB1202CAB4C0075DD0D /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5209AB0202CAB4C0075DD0D /* RecipeTableViewController.swift */; };
 		A5209AB4202CAD660075DD0D /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5209AB3202CAD660075DD0D /* SearchPageViewController.swift */; };
 		A5209AB6202CADDE0075DD0D /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5209AB5202CADDE0075DD0D /* ResultsViewController.swift */; };
@@ -32,9 +36,9 @@
 		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
 		A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E716702048582700D9FEF6 /* XMLParser.swift */; };
 		A5E71673204859F300D9FEF6 /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = A5E71672204859F300D9FEF6 /* Recipes.xml */; };
-		C20F25C84670957EFC61D8A1 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88CC50D34C418B23DD30A6D0 /* Pods_Kitchen_Help.framework */; };
 		C37496E32076718D0062EDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C37496E22076718D0062EDB8 /* GoogleService-Info.plist */; };
-		FA0C6B579E0E5F864C251AF8 /* Pods_Kitchen_HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96883284F2341649CE18581A /* Pods_Kitchen_HelpUITests.framework */; };
+		C827E46F3069EEC9091F4426 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559D8AEB07F679FE57DECCA9 /* Pods_Kitchen_Help.framework */; };
+		EBD51FF27730E55E603824BA /* Pods_Kitchen_HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC347BD267F6CA187CFEC73 /* Pods_Kitchen_HelpUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EC76275D0773F37795C11EF /* Pods_Kitchen_HelpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_HelpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AFAB75F7FE4E3B059AF48DB /* Pods_Kitchen_HelpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_HelpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB6E127207678B800A301B9 /* RECIPESbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RECIPESbutton.png; sourceTree = "<group>"; };
 		1DB6E128207678B800A301B9 /* LOGOUTbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGOUTbutton.png; sourceTree = "<group>"; };
 		1DB6E129207678B800A301B9 /* COMPLETEbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = COMPLETEbutton.png; sourceTree = "<group>"; };
@@ -65,13 +69,18 @@
 		1DB6E12D207678B800A301B9 /* INGREDIENTSbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INGREDIENTSbutton.png; sourceTree = "<group>"; };
 		1DB6E12E207678B800A301B9 /* LOGOblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGOblue.png; sourceTree = "<group>"; };
 		1DB6E12F207678B900A301B9 /* ADDbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADDbutton.png; sourceTree = "<group>"; };
+		1DC347BD267F6CA187CFEC73 /* Pods_Kitchen_HelpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_HelpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241532A00CA545B7EDCB46BB /* Pods-Kitchen Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.release.xcconfig"; sourceTree = "<group>"; };
+		559D8AEB07F679FE57DECCA9 /* Pods_Kitchen_Help.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_Help.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E2174042083A4BB0010DD9A /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
+		5E2174062083A4D30010DD9A /* OnlineUsersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnlineUsersTableViewController.swift; sourceTree = "<group>"; };
 		5E5534D1207FAB63008A985E /* FixedLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedLoginViewController.swift; sourceTree = "<group>"; };
 		5E621732207D545200BCBD00 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Desktop/HomeViewController.swift; sourceTree = "<group>"; };
+		5E840E1F4A2FB2A494F987D6 /* Pods-Kitchen HelpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EC0BB9A206DE36A005056FE /* EmailLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailLoginViewController.swift; sourceTree = "<group>"; };
-		5FCD4F5042233549C42C006E /* Pods-Kitchen HelpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.debug.xcconfig"; sourceTree = "<group>"; };
-		7286C441CAAB0753C9647499 /* Pods-Kitchen HelpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		88CC50D34C418B23DD30A6D0 /* Pods_Kitchen_Help.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_Help.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96883284F2341649CE18581A /* Pods_Kitchen_HelpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_HelpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECDE07F2083B50D0094D4C3 /* GroceryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryItem.swift; sourceTree = "<group>"; };
+		5ECDE0812083FF520094D4C3 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		961C72AA7BA346F26627952A /* Pods-Kitchen HelpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.release.xcconfig"; sourceTree = "<group>"; };
 		A5209AB0202CAB4C0075DD0D /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
 		A5209AB3202CAD660075DD0D /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
 		A5209AB5202CADDE0075DD0D /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
@@ -93,11 +102,10 @@
 		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
 		A5E716702048582700D9FEF6 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		A5E71672204859F300D9FEF6 /* Recipes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
-		AFFB44069DA38B6BFCF83267 /* Pods-Kitchen Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.debug.xcconfig"; sourceTree = "<group>"; };
 		C37496E22076718D0062EDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CB2C8B75A716A2AF8C18783D /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
-		D25F54C6EE38DA9EA412D45C /* Pods-Kitchen HelpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests.release.xcconfig"; sourceTree = "<group>"; };
-		F6D6D8FAACE508D7C4CDBF67 /* Pods-Kitchen Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.release.xcconfig"; sourceTree = "<group>"; };
+		D6FEA268209ADE1DCBEA0092 /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DF3C846BF99BB1BFFD0F316B /* Pods-Kitchen Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.debug.xcconfig"; sourceTree = "<group>"; };
+		FCED95EA06B7548F8CC2CFDC /* Pods-Kitchen HelpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20F25C84670957EFC61D8A1 /* Pods_Kitchen_Help.framework in Frameworks */,
+				C827E46F3069EEC9091F4426 /* Pods_Kitchen_Help.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FF5C241901D3D1E61899249 /* Pods_Kitchen_HelpTests.framework in Frameworks */,
+				1D9CA454018E7340F803C64A /* Pods_Kitchen_HelpTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA0C6B579E0E5F864C251AF8 /* Pods_Kitchen_HelpUITests.framework in Frameworks */,
+				EBD51FF27730E55E603824BA /* Pods_Kitchen_HelpUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,22 +152,11 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		5C8801FEB1E280E65DAC4532 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				AFFB44069DA38B6BFCF83267 /* Pods-Kitchen Help.debug.xcconfig */,
-				F6D6D8FAACE508D7C4CDBF67 /* Pods-Kitchen Help.release.xcconfig */,
-				5FCD4F5042233549C42C006E /* Pods-Kitchen HelpTests.debug.xcconfig */,
-				D25F54C6EE38DA9EA412D45C /* Pods-Kitchen HelpTests.release.xcconfig */,
-				7286C441CAAB0753C9647499 /* Pods-Kitchen HelpUITests.debug.xcconfig */,
-				CB2C8B75A716A2AF8C18783D /* Pods-Kitchen HelpUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A5209AB2202CAB6B0075DD0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5E2174062083A4D30010DD9A /* OnlineUsersTableViewController.swift */,
+				5E2174042083A4BB0010DD9A /* GroceryListTableViewController.swift */,
 				5E5534D1207FAB63008A985E /* FixedLoginViewController.swift */,
 				5E621732207D545200BCBD00 /* HomeViewController.swift */,
 				A56EFF982028B0B000B106F5 /* LoginViewController.swift */,
@@ -180,8 +177,8 @@
 				A56EFFAA2028B0B000B106F5 /* Kitchen HelpTests */,
 				A56EFFB52028B0B000B106F5 /* Kitchen HelpUITests */,
 				A56EFF942028B0B000B106F5 /* Products */,
-				5C8801FEB1E280E65DAC4532 /* Pods */,
-				F096E02EC1AFFD92A11698A9 /* Frameworks */,
+				B8234D7E427A612F1AEA0F82 /* Pods */,
+				B2AB64180F54154884FA8A1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -242,19 +239,34 @@
 		A5E7166F2048560D00D9FEF6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5ECDE07F2083B50D0094D4C3 /* GroceryItem.swift */,
 				A5E716702048582700D9FEF6 /* XMLParser.swift */,
+				5ECDE0812083FF520094D4C3 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		F096E02EC1AFFD92A11698A9 /* Frameworks */ = {
+		B2AB64180F54154884FA8A1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				88CC50D34C418B23DD30A6D0 /* Pods_Kitchen_Help.framework */,
-				0EC76275D0773F37795C11EF /* Pods_Kitchen_HelpTests.framework */,
-				96883284F2341649CE18581A /* Pods_Kitchen_HelpUITests.framework */,
+				559D8AEB07F679FE57DECCA9 /* Pods_Kitchen_Help.framework */,
+				1AFAB75F7FE4E3B059AF48DB /* Pods_Kitchen_HelpTests.framework */,
+				1DC347BD267F6CA187CFEC73 /* Pods_Kitchen_HelpUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8234D7E427A612F1AEA0F82 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF3C846BF99BB1BFFD0F316B /* Pods-Kitchen Help.debug.xcconfig */,
+				241532A00CA545B7EDCB46BB /* Pods-Kitchen Help.release.xcconfig */,
+				5E840E1F4A2FB2A494F987D6 /* Pods-Kitchen HelpTests.debug.xcconfig */,
+				961C72AA7BA346F26627952A /* Pods-Kitchen HelpTests.release.xcconfig */,
+				FCED95EA06B7548F8CC2CFDC /* Pods-Kitchen HelpUITests.debug.xcconfig */,
+				D6FEA268209ADE1DCBEA0092 /* Pods-Kitchen HelpUITests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,12 +276,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A56EFFBB2028B0B000B106F5 /* Build configuration list for PBXNativeTarget "Kitchen Help" */;
 			buildPhases = (
-				424157291AEF3A2968D0F278 /* [CP] Check Pods Manifest.lock */,
+				12F67901679BFFCBE9BFB596 /* [CP] Check Pods Manifest.lock */,
 				A56EFF8F2028B0B000B106F5 /* Sources */,
 				A56EFF902028B0B000B106F5 /* Frameworks */,
 				A56EFF912028B0B000B106F5 /* Resources */,
-				32C001C5060A365843AAE8A6 /* [CP] Embed Pods Frameworks */,
-				A6A94B05E58C1D05F326D336 /* [CP] Copy Pods Resources */,
+				5B6771190CABC3A75648F67E /* [CP] Embed Pods Frameworks */,
+				D9EBB2C4271F2C07D74A99B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -284,12 +296,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A56EFFBE2028B0B000B106F5 /* Build configuration list for PBXNativeTarget "Kitchen HelpTests" */;
 			buildPhases = (
-				E97706800F9D78BD92E7E479 /* [CP] Check Pods Manifest.lock */,
+				CAB38E93F627BE858A714B2B /* [CP] Check Pods Manifest.lock */,
 				A56EFFA32028B0B000B106F5 /* Sources */,
 				A56EFFA42028B0B000B106F5 /* Frameworks */,
 				A56EFFA52028B0B000B106F5 /* Resources */,
-				16F1BCDFA389C5F3973124B4 /* [CP] Embed Pods Frameworks */,
-				F728D1041E6C68FC72F26113 /* [CP] Copy Pods Resources */,
+				D9C9EB79AE2BE0B367817EA5 /* [CP] Embed Pods Frameworks */,
+				DE3BE176C4476645387D1963 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -305,12 +317,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A56EFFC12028B0B000B106F5 /* Build configuration list for PBXNativeTarget "Kitchen HelpUITests" */;
 			buildPhases = (
-				3B2101B2353C6377DE46B2C7 /* [CP] Check Pods Manifest.lock */,
+				A062F8660E47FF4C3808E605 /* [CP] Check Pods Manifest.lock */,
 				A56EFFAE2028B0B000B106F5 /* Sources */,
 				A56EFFAF2028B0B000B106F5 /* Frameworks */,
 				A56EFFB02028B0B000B106F5 /* Resources */,
-				AF880E7C0BBD5C83F400F4D7 /* [CP] Embed Pods Frameworks */,
-				089D63AB5D88C37EC553D114 /* [CP] Copy Pods Resources */,
+				38B4962FA0EE101C755F0324 /* [CP] Embed Pods Frameworks */,
+				0F513E89481369FCEAB231CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -406,7 +418,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		089D63AB5D88C37EC553D114 /* [CP] Copy Pods Resources */ = {
+		0F513E89481369FCEAB231CB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -421,66 +433,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		16F1BCDFA389C5F3973124B4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		32C001C5060A365843AAE8A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3B2101B2353C6377DE46B2C7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Kitchen HelpUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		424157291AEF3A2968D0F278 /* [CP] Check Pods Manifest.lock */ = {
+		12F67901679BFFCBE9BFB596 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -498,25 +451,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A6A94B05E58C1D05F326D336 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AF880E7C0BBD5C83F400F4D7 /* [CP] Embed Pods Frameworks */ = {
+		38B4962FA0EE101C755F0324 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -531,7 +466,53 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E97706800F9D78BD92E7E479 /* [CP] Check Pods Manifest.lock */ = {
+		5B6771190CABC3A75648F67E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/SWXMLHash/SWXMLHash.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWXMLHash.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A062F8660E47FF4C3808E605 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Kitchen HelpUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CAB38E93F627BE858A714B2B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -549,7 +530,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F728D1041E6C68FC72F26113 /* [CP] Copy Pods Resources */ = {
+		D9C9EB79AE2BE0B367817EA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen HelpTests/Pods-Kitchen HelpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EBB2C4271F2C07D74A99B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE3BE176C4476645387D1963 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -572,13 +586,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */,
+				5E2174052083A4BB0010DD9A /* GroceryListTableViewController.swift in Sources */,
+				5ECDE0802083B50D0094D4C3 /* GroceryItem.swift in Sources */,
 				5EC0BB9B206DE36A005056FE /* EmailLoginViewController.swift in Sources */,
 				A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */,
 				A5209AB1202CAB4C0075DD0D /* RecipeTableViewController.swift in Sources */,
+				5ECDE0822083FF530094D4C3 /* User.swift in Sources */,
 				A56EFF992028B0B000B106F5 /* LoginViewController.swift in Sources */,
 				5E621733207D545300BCBD00 /* HomeViewController.swift in Sources */,
 				A56EFF972028B0B000B106F5 /* AppDelegate.swift in Sources */,
 				5E5534D2207FAB64008A985E /* FixedLoginViewController.swift in Sources */,
+				5E2174072083A4D30010DD9A /* OnlineUsersTableViewController.swift in Sources */,
 				A5209AB6202CADDE0075DD0D /* ResultsViewController.swift in Sources */,
 				A5209AB4202CAD660075DD0D /* SearchPageViewController.swift in Sources */,
 			);
@@ -744,9 +762,10 @@
 		};
 		A56EFFBC2028B0B000B106F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFFB44069DA38B6BFCF83267 /* Pods-Kitchen Help.debug.xcconfig */;
+			baseConfigurationReference = DF3C846BF99BB1BFFD0F316B /* Pods-Kitchen Help.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Kitchen Help/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -759,9 +778,10 @@
 		};
 		A56EFFBD2028B0B000B106F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6D6D8FAACE508D7C4CDBF67 /* Pods-Kitchen Help.release.xcconfig */;
+			baseConfigurationReference = 241532A00CA545B7EDCB46BB /* Pods-Kitchen Help.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "Kitchen Help/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -774,7 +794,7 @@
 		};
 		A56EFFBF2028B0B000B106F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FCD4F5042233549C42C006E /* Pods-Kitchen HelpTests.debug.xcconfig */;
+			baseConfigurationReference = 5E840E1F4A2FB2A494F987D6 /* Pods-Kitchen HelpTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -791,7 +811,7 @@
 		};
 		A56EFFC02028B0B000B106F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D25F54C6EE38DA9EA412D45C /* Pods-Kitchen HelpTests.release.xcconfig */;
+			baseConfigurationReference = 961C72AA7BA346F26627952A /* Pods-Kitchen HelpTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -808,7 +828,7 @@
 		};
 		A56EFFC22028B0B000B106F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7286C441CAAB0753C9647499 /* Pods-Kitchen HelpUITests.debug.xcconfig */;
+			baseConfigurationReference = FCED95EA06B7548F8CC2CFDC /* Pods-Kitchen HelpUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -824,7 +844,7 @@
 		};
 		A56EFFC32028B0B000B106F5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB2C8B75A716A2AF8C18783D /* Pods-Kitchen HelpUITests.release.xcconfig */;
+			baseConfigurationReference = D6FEA268209ADE1DCBEA0092 /* Pods-Kitchen HelpUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

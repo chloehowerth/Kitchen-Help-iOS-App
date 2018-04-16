@@ -11,6 +11,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
         <array key="Futura.ttc">
             <string>Futura-Bold</string>
             <string>Futura-Medium</string>
@@ -82,7 +85,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qGO-IS-Ee7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="116"/>
+            <point key="canvasLocation" x="2049" y="366"/>
         </scene>
         <!--Fixed Login View Controller-->
         <scene sceneID="jiv-a1-lnG">
@@ -183,11 +186,12 @@
                     <connections>
                         <outlet property="Email" destination="gJu-mH-r8b" id="3Dg-JW-ES0"/>
                         <outlet property="Password" destination="1OP-zQ-2DP" id="HPc-OW-q9f"/>
+                        <segue destination="nVx-9a-aRn" kind="presentation" id="QBK-05-rnH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mX0-T7-KCW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="116"/>
+            <point key="canvasLocation" x="1246" y="366"/>
         </scene>
         <!--Recipe Search-->
         <scene sceneID="0CP-ei-PJk">
@@ -212,7 +216,7 @@
                                     <color key="titleColor" red="0.31386065483093262" green="0.60787504911422729" blue="0.96488672494888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="k8Q-bE-fQx" kind="show" id="p5X-Cc-fhD"/>
+                                    <segue destination="k8Q-bE-fQx" kind="presentation" id="x3G-sD-0Ic"/>
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IMm-BO-CiE">
@@ -266,7 +270,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGY-1H-hxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1816.8" y="895.50224887556226"/>
+            <point key="canvasLocation" x="2049" y="1107"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="xqp-L5-CkN">
@@ -310,6 +314,16 @@
                                     <action selector="LogOutAll:" destination="tm7-D4-DOf" eventType="touchUpInside" id="wDo-ZK-Jrh"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKi-RI-Cu0">
+                                <rect key="frame" x="139" y="265" width="86" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Grocery List">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="EWM-ti-gkr" kind="presentation" id="pDL-mC-nhy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="Xvm-vW-WL0"/>
@@ -318,7 +332,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeQ-xP-wdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2817" y="1828"/>
+            <point key="canvasLocation" x="2048.8000000000002" y="1872.4137931034484"/>
         </scene>
         <!--Recipes-->
         <scene sceneID="9hA-RW-2Zx">
@@ -376,7 +390,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZE-jq-KQt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2604" y="895.50224887556226"/>
+            <point key="canvasLocation" x="2769" y="1107"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="iBl-oe-CFD">
@@ -438,7 +452,110 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOW-hO-bIq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3308" y="896.40179910044981"/>
+            <point key="canvasLocation" x="3478" y="1107"/>
+        </scene>
+        <!--Grocery List-->
+        <scene sceneID="7J3-3T-mgh">
+            <objects>
+                <tableViewController title="Grocery List" id="cSC-Qb-bR8" customClass="GroceryListTableViewController" customModule="Kitchen_Help" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="X2d-2M-I3n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" textLabel="dPg-mK-ml3" detailTextLabel="Vua-mG-TbH" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="Jf7-w0-pYw">
+                                <rect key="frame" x="0.0" y="22" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Jf7-w0-pYw" id="39S-GC-fXq">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dPg-mK-ml3">
+                                            <rect key="frame" x="16" y="7" width="35" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vua-mG-TbH">
+                                            <rect key="frame" x="16" y="34" width="41.5" height="16.5"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cSC-Qb-bR8" id="qPN-87-EY3"/>
+                            <outlet property="delegate" destination="cSC-Qb-bR8" id="ZbU-x1-4nR"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Grocery List" id="KmZ-yJ-lEe">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="VbI-eQ-eoC"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="LfI-Au-ukG">
+                            <connections>
+                                <action selector="addButtonDidTouch:" destination="cSC-Qb-bR8" id="NJD-WH-GJK"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="tm7-D4-DOf" kind="show" identifier="ListToUsers" id="QHi-Ac-iPX"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CLh-1R-fsb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4108" y="1872"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F19-zk-ZXd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EWM-ti-gkr" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="kyt-VE-TDc">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="cSC-Qb-bR8" kind="relationship" relationship="rootViewController" id="3Eb-zw-iCa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gub-H2-fFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3025" y="1872"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1Ym-UU-ZS9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nVx-9a-aRn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="X2H-6e-fCN">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="16"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="tm7-D4-DOf" kind="relationship" relationship="rootViewController" id="S6n-hB-5wl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NEI-3w-eQI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1246" y="1872"/>
         </scene>
     </scenes>
     <resources>
@@ -448,7 +565,6 @@
         <image name="MENUbutton.png" width="2250" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="VcZ-NW-5FS"/>
-        <segue reference="gPW-KT-1rw"/>
+        <segue reference="QHi-Ac-iPX"/>
     </inferredMetricsTieBreakers>
 </document>
