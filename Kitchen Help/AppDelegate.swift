@@ -42,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate  {
         // ...
         if let error = error {
             
-            
+            return
         }
         
         
