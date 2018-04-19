@@ -14,6 +14,8 @@
 		1DB6E136207678B900A301B9 /* INGREDIENTSbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12D207678B800A301B9 /* INGREDIENTSbutton.png */; };
 		1DB6E137207678B900A301B9 /* LOGOblue.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12E207678B800A301B9 /* LOGOblue.png */; };
 		1DB6E138207678B900A301B9 /* ADDbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DB6E12F207678B900A301B9 /* ADDbutton.png */; };
+		1DC98D502088DFEC00431BCF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DC98D4F2088DFEC00431BCF /* HomeViewController.swift */; };
+		1DC98D522088EA8800431BCF /* LOGINgreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DC98D512088EA8800431BCF /* LOGINgreen.png */; };
 		5E2174052083A4BB0010DD9A /* GroceryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2174042083A4BB0010DD9A /* GroceryListTableViewController.swift */; };
 		5E2174072083A4D30010DD9A /* OnlineUsersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E2174062083A4D30010DD9A /* OnlineUsersTableViewController.swift */; };
 		5E5534D2207FAB64008A985E /* FixedLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5534D1207FAB63008A985E /* FixedLoginViewController.swift */; };
@@ -36,7 +38,6 @@
 		C37496E32076718D0062EDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C37496E22076718D0062EDB8 /* GoogleService-Info.plist */; };
 		C38109662088D81600A8E1CA /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = C38109652088D81600A8E1CA /* Recipes.xml */; };
 		C38109682088D84000A8E1CA /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38109672088D84000A8E1CA /* RecipeTableViewCell.swift */; };
-		C38688E22084F3E5002F98CE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38688E12084F3E5002F98CE /* HomeViewController.swift */; };
 		C827E46F3069EEC9091F4426 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559D8AEB07F679FE57DECCA9 /* Pods_Kitchen_Help.framework */; };
 		EBD51FF27730E55E603824BA /* Pods_Kitchen_HelpUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DC347BD267F6CA187CFEC73 /* Pods_Kitchen_HelpUITests.framework */; };
 /* End PBXBuildFile section */
@@ -63,13 +64,14 @@
 		1DB6E127207678B800A301B9 /* RECIPESbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RECIPESbutton.png; sourceTree = "<group>"; };
 		1DB6E128207678B800A301B9 /* LOGOUTbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGOUTbutton.png; sourceTree = "<group>"; };
 		1DB6E129207678B800A301B9 /* COMPLETEbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = COMPLETEbutton.png; sourceTree = "<group>"; };
-		1DB6E12A207678B800A301B9 /* LOGINgreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGINgreen.png; sourceTree = "<group>"; };
 		1DB6E12B207678B800A301B9 /* LOGINbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGINbutton.png; sourceTree = "<group>"; };
 		1DB6E12C207678B800A301B9 /* MENUbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MENUbutton.png; sourceTree = "<group>"; };
 		1DB6E12D207678B800A301B9 /* INGREDIENTSbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = INGREDIENTSbutton.png; sourceTree = "<group>"; };
 		1DB6E12E207678B800A301B9 /* LOGOblue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGOblue.png; sourceTree = "<group>"; };
 		1DB6E12F207678B900A301B9 /* ADDbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ADDbutton.png; sourceTree = "<group>"; };
 		1DC347BD267F6CA187CFEC73 /* Pods_Kitchen_HelpUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_HelpUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DC98D4F2088DFEC00431BCF /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Downloads/HomeViewController.swift; sourceTree = "<group>"; };
+		1DC98D512088EA8800431BCF /* LOGINgreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LOGINgreen.png; sourceTree = "<group>"; };
 		241532A00CA545B7EDCB46BB /* Pods-Kitchen Help.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.release.xcconfig"; sourceTree = "<group>"; };
 		559D8AEB07F679FE57DECCA9 /* Pods_Kitchen_Help.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Kitchen_Help.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E2174042083A4BB0010DD9A /* GroceryListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListTableViewController.swift; sourceTree = "<group>"; };
@@ -102,7 +104,6 @@
 		C37496E22076718D0062EDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C38109652088D81600A8E1CA /* Recipes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
 		C38109672088D84000A8E1CA /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
-		C38688E12084F3E5002F98CE /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Desktop/HomeViewController.swift; sourceTree = "<group>"; };
 		D6FEA268209ADE1DCBEA0092 /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DF3C846BF99BB1BFFD0F316B /* Pods-Kitchen Help.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen Help.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen Help/Pods-Kitchen Help.debug.xcconfig"; sourceTree = "<group>"; };
 		FCED95EA06B7548F8CC2CFDC /* Pods-Kitchen HelpUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +144,7 @@
 				1DB6E129207678B800A301B9 /* COMPLETEbutton.png */,
 				1DB6E12D207678B800A301B9 /* INGREDIENTSbutton.png */,
 				1DB6E12B207678B800A301B9 /* LOGINbutton.png */,
-				1DB6E12A207678B800A301B9 /* LOGINgreen.png */,
+				1DC98D512088EA8800431BCF /* LOGINgreen.png */,
 				1DB6E12E207678B800A301B9 /* LOGOblue.png */,
 				1DB6E128207678B800A301B9 /* LOGOUTbutton.png */,
 				1DB6E12C207678B800A301B9 /* MENUbutton.png */,
@@ -155,7 +156,7 @@
 		A5209AB2202CAB6B0075DD0D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C38688E12084F3E5002F98CE /* HomeViewController.swift */,
+				1DC98D4F2088DFEC00431BCF /* HomeViewController.swift */,
 				5E2174062083A4D30010DD9A /* OnlineUsersTableViewController.swift */,
 				5E2174042083A4BB0010DD9A /* GroceryListTableViewController.swift */,
 				5E5534D1207FAB63008A985E /* FixedLoginViewController.swift */,
@@ -386,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */,
+				1DC98D522088EA8800431BCF /* LOGINgreen.png in Resources */,
 				1DB6E132207678B900A301B9 /* COMPLETEbutton.png in Resources */,
 				A56EFFA12028B0B000B106F5 /* LaunchScreen.storyboard in Resources */,
 				1DB6E138207678B900A301B9 /* ADDbutton.png in Resources */,
@@ -590,8 +592,8 @@
 				5ECDE0802083B50D0094D4C3 /* GroceryItem.swift in Sources */,
 				C38109682088D84000A8E1CA /* RecipeTableViewCell.swift in Sources */,
 				5EC0BB9B206DE36A005056FE /* EmailLoginViewController.swift in Sources */,
+				1DC98D502088DFEC00431BCF /* HomeViewController.swift in Sources */,
 				A5B169CB20446B1300A524A5 /* HomeTableViewController.swift in Sources */,
-				C38688E22084F3E5002F98CE /* HomeViewController.swift in Sources */,
 				A5209AB1202CAB4C0075DD0D /* RecipeTableViewController.swift in Sources */,
 				5ECDE0822083FF530094D4C3 /* User.swift in Sources */,
 				A56EFF972028B0B000B106F5 /* AppDelegate.swift in Sources */,
