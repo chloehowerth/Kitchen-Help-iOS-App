@@ -54,7 +54,7 @@ class GroceryListTableViewController: UITableViewController {
         
         tableView.allowsMultipleSelectionDuringEditing = false
         
-        userCountBarButtonItem = UIBarButtonItem(title: " < Back",
+        userCountBarButtonItem = UIBarButtonItem(title: "1",
                                                  style: .plain,
                                                  target: self,
                                                  action: #selector(userCountButtonDidTouch))
