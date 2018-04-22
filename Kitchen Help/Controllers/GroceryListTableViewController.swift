@@ -28,8 +28,7 @@ import FirebaseDatabase
 class GroceryListTableViewController: UITableViewController {
     let ref = Database.database().reference(withPath: "grocery-items")
 
-    // MARK: Constants
-    let listToUsers = "ListToUsers"
+   
     
     // MARK: Properties
     var items: [GroceryItem] = []
@@ -54,12 +53,7 @@ class GroceryListTableViewController: UITableViewController {
         
         tableView.allowsMultipleSelectionDuringEditing = false
         
-        userCountBarButtonItem = UIBarButtonItem(title: "1",
-                                                 style: .plain,
-                                                 target: self,
-                                                 action: #selector(userCountButtonDidTouch))
-        userCountBarButtonItem.tintColor = UIColor.white
-        navigationItem.leftBarButtonItem = userCountBarButtonItem
+        
         
         user = User(uid: "", email: "")
     }
@@ -156,9 +150,7 @@ class GroceryListTableViewController: UITableViewController {
         present(alert, animated: true, completion: nil)
     }
     
-    @objc func userCountButtonDidTouch() {
-        performSegue(withIdentifier: listToUsers, sender: nil)
-    }
+  
     
 }
 
