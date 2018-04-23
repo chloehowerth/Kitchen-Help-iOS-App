@@ -9,18 +9,32 @@
 import UIKit
 
 class SearchPageViewController: UIViewController {
-
+   
+   
+    
+    
+    @IBOutlet weak var textView: UITextView!
+    @IBOutlet weak var ingreEnter: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        ingreEnter.delegate = self as? UITextFieldDelegate
+        textView.delegate = self as? UITextViewDelegate
     }
+    
+    @IBAction func enterTapped(_ sender: Any) {
+        textView.text = ingreEnter.text!
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    func textFieldDidBeginEditing(textField: UITextField) {
+        textField.text = ""
+    }
 
     /*
     // MARK: - Navigation
