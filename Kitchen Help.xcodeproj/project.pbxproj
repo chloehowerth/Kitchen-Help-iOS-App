@@ -34,7 +34,7 @@
 		A5CC4CC92041E4D90019BBF3 /* Recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = A5CC4CC82041E4D90019BBF3 /* Recipes.plist */; };
 		A5E716712048582700D9FEF6 /* XMLParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E716702048582700D9FEF6 /* XMLParser.swift */; };
 		C37496E32076718D0062EDB8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C37496E22076718D0062EDB8 /* GoogleService-Info.plist */; };
-		C38109662088D81600A8E1CA /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = C38109652088D81600A8E1CA /* Recipes.xml */; };
+		C37A6E8D208F9D2C00B4ABC4 /* Recipes.xml in Resources */ = {isa = PBXBuildFile; fileRef = C37A6E8C208F9D2C00B4ABC4 /* Recipes.xml */; };
 		C38109682088D84000A8E1CA /* RecipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C38109672088D84000A8E1CA /* RecipeTableViewCell.swift */; };
 		C399D094208E38D5008ECAF7 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C399D093208E38D5008ECAF7 /* HomeViewController.swift */; };
 		C827E46F3069EEC9091F4426 /* Pods_Kitchen_Help.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559D8AEB07F679FE57DECCA9 /* Pods_Kitchen_Help.framework */; };
@@ -100,7 +100,7 @@
 		A5CC4CC82041E4D90019BBF3 /* Recipes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Recipes.plist; sourceTree = "<group>"; };
 		A5E716702048582700D9FEF6 /* XMLParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMLParser.swift; sourceTree = "<group>"; };
 		C37496E22076718D0062EDB8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C38109652088D81600A8E1CA /* Recipes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
+		C37A6E8C208F9D2C00B4ABC4 /* Recipes.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = Recipes.xml; sourceTree = "<group>"; };
 		C38109672088D84000A8E1CA /* RecipeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeTableViewCell.swift; sourceTree = "<group>"; };
 		C399D093208E38D5008ECAF7 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../../../../Desktop/HomeViewController.swift; sourceTree = "<group>"; };
 		D6FEA268209ADE1DCBEA0092 /* Pods-Kitchen HelpUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Kitchen HelpUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Kitchen HelpUITests/Pods-Kitchen HelpUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -231,7 +231,7 @@
 			children = (
 				A5CC4CC82041E4D90019BBF3 /* Recipes.plist */,
 				A5B169CE20446CA800A524A5 /* Pantry.plist */,
-				C38109652088D81600A8E1CA /* Recipes.xml */,
+				C37A6E8C208F9D2C00B4ABC4 /* Recipes.xml */,
 			);
 			path = "Property Lists";
 			sourceTree = "<group>";
@@ -393,7 +393,7 @@
 				1DB6E135207678B900A301B9 /* MENUbutton.png in Resources */,
 				1DB6E136207678B900A301B9 /* INGREDIENTSbutton.png in Resources */,
 				A5B169CF20446CA800A524A5 /* Pantry.plist in Resources */,
-				C38109662088D81600A8E1CA /* Recipes.xml in Resources */,
+				C37A6E8D208F9D2C00B4ABC4 /* Recipes.xml in Resources */,
 				A56EFF9E2028B0B000B106F5 /* Assets.xcassets in Resources */,
 				1DB6E134207678B900A301B9 /* LOGINbutton.png in Resources */,
 				A56EFF9C2028B0B000B106F5 /* Main.storyboard in Resources */,

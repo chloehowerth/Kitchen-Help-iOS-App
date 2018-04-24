@@ -210,9 +210,6 @@
                                 <state key="normal" title="All Recipes">
                                     <color key="titleColor" red="0.31386065483093262" green="0.60787504911422729" blue="0.96488672494888306" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="f2Y-E5-bF9" kind="show" id="cp6-4d-CTG"/>
-                                </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="IMm-BO-CiE">
                                 <rect key="frame" x="67" y="430" width="240" height="129"/>
@@ -276,11 +273,7 @@
                         <viewLayoutGuide key="safeArea" id="c8F-Uv-9T4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Search" id="r7O-NE-Mep">
-                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="7Kq-3L-9xL">
-                            <connections>
-                                <segue destination="tm7-D4-DOf" kind="show" id="be5-30-aar"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" title="&lt;Back" id="7Kq-3L-9xL"/>
                     </navigationItem>
                     <connections>
                         <outlet property="ingreEnter" destination="oTs-bO-f0T" id="73a-tk-JEF"/>
@@ -289,7 +282,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGY-1H-hxg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2088.8000000000002" y="1548.5757121439281"/>
+            <point key="canvasLocation" x="3751" y="639"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="xqp-L5-CkN">
@@ -437,12 +430,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="lu2-WD-Y4q" kind="relationship" relationship="rootViewController" id="2Xf-Ip-vQX"/>
+                        <segue destination="f2Y-E5-bF9" kind="relationship" relationship="rootViewController" id="VGA-o1-Y7c"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gal-YG-rkk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1190" y="1549"/>
+            <point key="canvasLocation" x="1209" y="1537"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZTy-2Q-Jbp">
@@ -563,7 +556,13 @@
                             <outlet property="delegate" destination="f2Y-E5-bF9" id="N0L-Gj-pRb"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Recipes" id="LxR-9i-y5S"/>
+                    <navigationItem key="navigationItem" title="Recipes" id="LxR-9i-y5S">
+                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="eaU-sj-hMe">
+                            <connections>
+                                <segue destination="tm7-D4-DOf" kind="show" id="Owd-u6-0EY"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="myTableView" destination="EPr-f6-DjQ" id="pdL-ZZ-Nml"/>
                         <outlet property="searchBar" destination="bhv-zR-KLT" id="llg-aj-z6y"/>
@@ -571,7 +570,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gb2-6m-D36" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2994" y="1549"/>
+            <point key="canvasLocation" x="2081" y="1549"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="YD7-RI-W2l">
@@ -648,8 +647,8 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[ Image ]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZc-Wk-En1">
-                                                <rect key="frame" x="147" y="96" width="80" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZc-Wk-En1">
+                                                <rect key="frame" x="147" y="106.5" width="80" height="0.0"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="9Kf-OD-dxI"/>
                                                 </constraints>
@@ -721,7 +720,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2i-uy-YO7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3935" y="1503"/>
+            <point key="canvasLocation" x="2826" y="1644"/>
         </scene>
     </scenes>
     <resources>
@@ -730,7 +729,7 @@
         <image name="MENUbutton.png" width="2250" height="700"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="be5-30-aar"/>
+        <segue reference="Owd-u6-0EY"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>

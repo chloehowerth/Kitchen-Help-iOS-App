@@ -18,6 +18,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
     
     var thisName = ""
     var recipeTitle = ""
+    var recipeType = ""
     var recipeDuration = ""
     var recipeCalories = ""
     var recipeDescription = ""
@@ -53,7 +54,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
     }
     
     
-    // Table View Delegates
+    // Table View Delegates ================================
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -66,7 +67,6 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             return filteredData.count
         }
         
-        
         return tableViewDataSource.count
         
     }
@@ -77,12 +77,12 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         if let item = tableViewDataSource[indexPath.item] as? Recipe {
             if isSearching {
                 cell.item = filteredData[indexPath.row]
+                cell.recipeImage.downloadImage(from: (self.filteredData[indexPath.item].image))
             } else {
                 cell.item = item
+                cell.recipeImage.downloadImage(from: (self.tableViewDataSource[indexPath.item].image))
             }
         }
-        
-        cell.recipeImage.downloadImage(from: (self.tableViewDataSource[indexPath.item].image)) /****/
         
         return cell
     }
@@ -93,24 +93,35 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         
         // Information to be passed to ResultsViewController
         
-        resultsVC.getTitle = tableViewDataSource[indexPath.row].title
-        resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
-        resultsVC.getIngredients = tableViewDataSource[indexPath.row].ingredients
-        resultsVC.getDirections = tableViewDataSource[indexPath.row].description
-        resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
-        
-        //resultsVC.getImage = tableViewDataSource[indexPath.row].image
-        
-        // Code to push image
+        if (tableViewDataSource[indexPath.item] as? Recipe) != nil  {
+            
+            if isSearching {
+                resultsVC.getTitle = filteredData[indexPath.row].title
+                resultsVC.getDuration = filteredData[indexPath.row].duration
+                resultsVC.getIngredients = filteredData[indexPath.row].ingredients
+                resultsVC.getDirections = filteredData[indexPath.row].description
+                resultsVC.getCalories = filteredData[indexPath.row].calories
+                resultsVC.getImage = filteredData[indexPath.item].image
+            } else {
+                resultsVC.getTitle = tableViewDataSource[indexPath.row].title
+                resultsVC.getDuration = tableViewDataSource[indexPath.row].duration
+                resultsVC.getIngredients = tableViewDataSource[indexPath.row].ingredients
+                resultsVC.getDirections = tableViewDataSource[indexPath.row].description
+                resultsVC.getCalories = tableViewDataSource[indexPath.row].calories
+                // Parse images
+                resultsVC.getImage = tableViewDataSource[indexPath.item].image
+            }
+        }
         
         // Push to next view
         self.navigationController?.pushViewController(resultsVC, animated: true)
-        
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 107
     }
+    
+    // Search Bar =================================
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         
@@ -120,19 +131,20 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             myTableView.reloadData()
         } else {
             isSearching = true
-            filteredData = tableViewDataSource.filter({$0.title.range(of: searchBar.text!) != nil})
+            filteredData = tableViewDataSource.filter({($0.title.range(of: searchBar.text!) != nil) || $0.type.range(of: searchBar.text!) != nil})
             myTableView.reloadData()
         }
         
     }
     
-    // XML Parsing
+    // XML Parsing ================================
     
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         thisName = elementName
         
         if elementName == "dish" {
             var recipeTitle = ""
+            var recipeType = ""
             var recipeDuration = ""
             var recipeCalories = ""
             var recipeIngredients = ""
@@ -148,6 +160,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
             switch thisName
             {
             case "title": recipeTitle = data
+            case "type": recipeType = data
             case "duration": recipeDuration = data
             case "calories": recipeCalories = data
             case "image": recipeImage = data
@@ -167,6 +180,7 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
         if elementName == "dish" {
             var recipe = Recipe()
             recipe.title = recipeTitle
+            recipe.type = recipeType
             recipe.duration = recipeDuration
             recipe.calories = recipeCalories
             recipe.ingredients = recipeIngredients
@@ -183,15 +197,16 @@ class RecipeTableViewController: UITableViewController, XMLParserDelegate, UISea
 extension UIImageView {
     func downloadImage(from url: String) {
         let urlRequest = URLRequest(url: URL(string: url)!)
-        let task = URLSession.shared.dataTask(with: urlRequest) { (data,response,error) in
+        let task = URLSession.shared.dataTask(with: urlRequest) { [weak self] (data,response,error) in
             if error != nil {
                 print(error!)
                 return
             }
             DispatchQueue.main.sync {
-                self.image = UIImage(data: data!)
+                self?.image = UIImage(data: data!)
             }
         }
         task.resume()
     }
 }
+
